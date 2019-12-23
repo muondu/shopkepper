@@ -25,12 +25,18 @@ print(listofitems)
 
 listconstructor = list()
 input1 = int(input("How many items do you want do buy: "))
+
 for b in range(input1):
     input2 = listofitems[input("What is your item:  ")]
     print(input2)
     
-
-    listconstructor.append(input2) 
+    input3 = input("How many times do you want to buy the item:  ")
+    
+    input4 = int(input2) * int(input3)
+    
+    print(str(input4))
+    
+    listconstructor.append(input4) 
 
     total = sum(listconstructor)
 
